@@ -1,190 +1,149 @@
 
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <title>Currículo - Murilo Da Luz Dos Passos</title>
-  <style>
-    /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Murilo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section, article {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        a {
+            color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Meu Currículo</h1>
+        <nav>
+            <ul>
+                <li><a href="#contato">Meios de Contato</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#objetivos">Objetivos Profissionais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article id="objetivos">
+            <h2>Objetivos Profissionais</h2>
+            <p>Atualmente, estou cursando Técnico de Informática no Colégio Ulbra São Lucas e busco uma oportunidade de estágio para adquirir experiência prática na área. Tenho muita vontade de aprender, sou dedicado, responsável e estou em busca do meu primeiro contato com o mercado de trabalho para aplicar os conhecimentos adquiridos nos estudos e me desenvolver profissionalmente.</p>
+        </article>
+
+        <section id="sobre">
+            <h2>Sobre Mim</h2>
+            <p><strong>Cidade:</strong> Sapucaia do Sul - RS</p>
+            <p><strong>Data de nascimento:</strong> 04/08/2010</p>
+            <p><strong>Formação:</strong> Estudante de Técnico de Informática - ULBRA São Lucas</p>
+            <p><strong>Ensino Médio:</strong> 1º ano</p>
+            <p><strong>Instagram:</strong> @7.murilozzy</p>
+            <p><strong>Objetivo:</strong> Buscar experiência na área de tecnologia</p>
+            <p><a href="https://github.com/murilo167" target="_blank">Meu GitHub</a></p>
+        </section>
+
+        <article id="contato">
+            <h2>Meios de Contato</h2>
+            <p><strong>Telefone:</strong> (51) 98992-4439</p>
+            <p><strong>Email:</strong> murilo95@gmail.com</p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Murilo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+<style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      padding: 30px 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background-image: url('https://64.media.tumblr.com/bfe90ef1addacef577bc2813d1cfd001/807f9e5a5e0ce538-eb/s1280x1920/5434e6201950f308e365f0e00496bb2e28f624f6.gifv');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+        color: #fff; /* texto branco para melhor contraste */
     }
 
-    .curriculo {
-      width: 700px;
-      background-image: url('https://64.media.tumblr.com/bfe90ef1addacef577bc2813d1cfd001/807f9e5a5e0ce538-eb/s1280x1920/5434e6201950f308e365f0e00496bb2e28f624f6.gifv');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 10px;
-      padding: 30px 40px;
-      color: #f0f0f0;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
-      position: relative;
-      overflow: hidden;
+    /* Adicione um fundo semi-transparente nas seções para legibilidade */
+    main, header, footer {
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
     }
 
-    /* Camada escura para dar contraste no texto */
-    .curriculo::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 10px;
-      z-index: 0;
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
-    /* Conteúdo fica acima da camada escura */
-    .curriculo > * {
-      position: relative;
-      z-index: 1;
-    }
-
-    /* Imagem no canto superior direito */
-    .logo-canto {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 80px;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-      z-index: 2;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin-bottom: 15px;
-      color: #ffd700;
-      text-shadow: 1px 1px 5px #000;
-    }
-
-    h2 {
-      font-size: 20px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-      color: #ffa500;
-      text-shadow: 1px 1px 4px #000;
-      border-bottom: 2px solid #ffa500;
-      padding-bottom: 4px;
-      width: fit-content;
-    }
-
-    p,
-    li,
-    .contato {
-      font-size: 16px;
-      line-height: 1.4;
-      color: #fff;
-      text-shadow: 1px 1px 3px #000;
-    }
-
-    ul {
-      margin-top: 5px;
-      margin-bottom: 10px;
-      padding-left: 20px;
-      list-style-type: disc;
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
     }
 
     a {
-      color: #00dfff;
-      text-decoration: none;
-      font-weight: bold;
-      text-shadow: 1px 1px 3px #000;
+        color: #87cefa;
     }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .contato {
-      margin-bottom: 20px;
-    }
-
-    /* Responsividade simples */
-    @media (max-width: 760px) {
-      .curriculo {
-        width: 100%;
-        padding: 25px 20px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-
-      h2 {
-        font-size: 18px;
-      }
-
-      p,
-      li,
-      .contato {
-        font-size: 15px;
-      }
-
-      /* Ajustar tamanho da imagem para telas menores */
-      .logo-canto {
-        width: 60px;
-        top: 50px;
-        right: 15px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="curriculo">
-    <img src='https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2025-03/GettyImages-1447164827.jpg.webp?itok=NnskFZnr' alt="Logo" class="logo-canto" />
-
-    <div class="contato">
-      📍 Sapucaia do Sul - RS<br />
-      📧 <a href="mailto:murilopasso95@gmail.com">murilopasso95@gmail.com</a><br />
-      📞 (51) 98992-4439<br />
-      📸 Instagram: <a href="https://www.instagram.com/7.murilozzy" target="_blank" rel="noopener noreferrer">@7.murilozzy</a>
-    </div>
-
-    <h2>Informações Pessoais</h2>
-    <p>Estudante de Técnico em Informática e Administração</p>
-    <p>Ensino Médio - 1º Grau</p>
-    <p>Nascimento: 04/08/2009</p>
-
-    <h2>Objetivo</h2>
-    <p>Conseguir minha primeira oportunidade de trabalho, aprendendo e contribuindo com a equipe.</p>
-
-    <h2>Habilidades Comportamentais</h2>
-    <ul>
-      <li>Comunicação</li>
-      <li>Proatividade</li>
-      <li>Organização</li>
-      <li>Pontualidade</li>
-      <li>Comprometimento</li>
-    </ul>
-
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li>Informática básica</li>
-      <li>Pacote Office</li>
-      <li>Redes Sociais</li>
-      <li>Digitação rápida</li>
-      <li>Edição (Canva)</li>
-      <li>Atendimento ao cliente</li>
-      <li>Redação profissional</li>
-      <li>Inglês básico</li>
-    </ul>
-  </div>
-</body>
+</style>
 
 </html>
