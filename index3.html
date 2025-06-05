@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Currículo - Murilo Da Luz Dos Passos</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 30px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .curriculo {
+      width: 700px;
+      background-image: url('https://64.media.tumblr.com/bfe90ef1addacef577bc2813d1cfd001/807f9e5a5e0ce538-eb/s1280x1920/5434e6201950f308e365f0e00496bb2e28f624f6.gifv');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      padding: 30px 40px;
+      color: #f0f0f0;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Camada escura para dar contraste no texto */
+    .curriculo::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+      z-index: 0;
+    }
+
+    /* Conteúdo fica acima da camada escura */
+    .curriculo > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Imagem no canto superior direito */
+    .logo-canto {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 80px;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #ffd700;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #ffa500;
+      text-shadow: 1px 1px 4px #000;
+      border-bottom: 2px solid #ffa500;
+      padding-bottom: 4px;
+      width: fit-content;
+    }
+
+    p,
+    li,
+    .contato {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #fff;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    ul {
+      margin-top: 5px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    a {
+      color: #00dfff;
+      text-decoration: none;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contato {
+      margin-bottom: 20px;
+    }
+
+    /* Responsividade simples */
+    @media (max-width: 760px) {
+      .curriculo {
+        width: 100%;
+        padding: 25px 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p,
+      li,
+      .contato {
+        font-size: 15px;
+      }
+
+      /* Ajustar tamanho da imagem para telas menores */
+      .logo-canto {
+        width: 60px;
+        top: 50px;
+        right: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="curriculo">
+    <img src='https://library.sportingnews.com/styles/crop_style_16_9_desktop_webp/s3/2025-03/GettyImages-1447164827.jpg.webp?itok=NnskFZnr' alt="Logo" class="logo-canto" />
+
+    <div class="contato">
+      📍 Sapucaia do Sul - RS<br />
+      📧 <a href="mailto:murilopasso95@gmail.com">murilopasso95@gmail.com</a><br />
+      📞 (51) 98992-4439<br />
+      📸 Instagram: <a href="https://www.instagram.com/7.murilozzy" target="_blank" rel="noopener noreferrer">@7.murilozzy</a>
+    </div>
+
+    <h2>Informações Pessoais</h2>
+    <p>Estudante de Técnico em Informática e Administração</p>
+    <p>Ensino Médio - 1º Grau</p>
+    <p>Nascimento: 04/08/2009</p>
+
+    <h2>Objetivo</h2>
+    <p>Conseguir minha primeira oportunidade de trabalho, aprendendo e contribuindo com a equipe.</p>
+
+    <h2>Habilidades Comportamentais</h2>
+    <ul>
+      <li>Comunicação</li>
+      <li>Proatividade</li>
+      <li>Organização</li>
+      <li>Pontualidade</li>
+      <li>Comprometimento</li>
+    </ul>
+
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li>Informática básica</li>
+      <li>Pacote Office</li>
+      <li>Redes Sociais</li>
+      <li>Digitação rápida</li>
+      <li>Edição (Canva)</li>
+      <li>Atendimento ao cliente</li>
+      <li>Redação profissional</li>
+      <li>Inglês básico</li>
+    </ul>
+  </div>
+</body>
+
+</html>
